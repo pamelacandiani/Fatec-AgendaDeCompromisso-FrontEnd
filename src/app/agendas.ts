@@ -1,4 +1,4 @@
-export interface Agendas{
+export interface Agendas {
   id: number,
   compromisso: string,
   date: string,

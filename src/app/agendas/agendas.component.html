@@ -1,1 +1,22 @@
-<p>agendas works!</p>
+<div class="container">
+  <table class="table">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Compromisso</th>
+        <th scope="col">Data</th>
+        <th scope="col">Hora</th>
+        <th scope="col">Local</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let agendas of agendas">
+          <th>{{agendas.id}}</th>
+          <th>{{agendas.compromisso}}</th>
+          <td>{{agendas.date}}</td>
+          <td>{{agendas.time}}</td>
+          <td>{{agendas.local}}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
