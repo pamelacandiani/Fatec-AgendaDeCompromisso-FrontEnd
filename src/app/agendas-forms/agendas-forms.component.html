@@ -1,0 +1,22 @@
+<div class="container">
+  <h3>Agendar Compromisso</h3>
+  <form [formGroup]="formGroupAgendas">
+    <div class="mb-3">
+      <label for="compromisso" class="form-label">Compromisso</label>
+      <input formControlName="compromisso" type="text " class="form-control" id="compromisso" placeholder="Digite o compromisso">
+    </div>
+    <div class="mb-3">
+      <label for="date" class="form-label">Data</label>
+      <input formControlName="date" type="text " class="form-control" id="date" placeholder="Digite a data">
+    </div>
+    <div class="mb-3">
+      <label for="time" class="form-label">Horario</label>
+      <input formControlName="time" type="text " class="form-control" id="time" placeholder="Digite o horario">
+    </div>
+    <div class="mb-3">
+      <label for="local" class="form-label">Local</label>
+      <input formControlName="local" type="text " class="form-control" id="local" placeholder="Digite o local">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="save()">Agendar</button>
+  </form>
+</div>

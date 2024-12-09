@@ -18,5 +18,8 @@ export class AgendasService {
     return this.http.delete<void>('http://localhost:8080/agendas/' + agendas.id)
   }
 
-  
+  save(agendas: Agendas): Observable<Agendas>{
+    return this.http.post<Agendas>('http://localhost:8080/agendas', agendas)
+  }
+
 }

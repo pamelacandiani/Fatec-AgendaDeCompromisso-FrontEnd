@@ -1,3 +1,4 @@
+import { Router } from '@angular/router';
 import { Component, OnInit } from '@angular/core';
 import { Agendas } from '../agendas';
 import { AgendasService } from '../agendas.service';
@@ -11,7 +12,7 @@ export class AgendasComponent implements OnInit {
 
   agendas: Agendas [] = []
 
-  constructor(private service: AgendasService){}
+  constructor(private service: AgendasService, private router: Router){}
 
   ngOnInit(): void {
       this.loadAgendas();
@@ -29,4 +30,7 @@ export class AgendasComponent implements OnInit {
     })
   }
 
+  create(){
+    this.router.navigate(['agendas-forms'])
+  }
 }
