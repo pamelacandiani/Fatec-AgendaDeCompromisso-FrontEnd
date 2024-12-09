@@ -23,4 +23,10 @@ export class AgendasComponent implements OnInit {
     })
   }
 
+  delete(agendas: Agendas){
+    this.service.delete(agendas).subscribe({
+      next: () => this.loadAgendas()
+    })
+  }
+
 }

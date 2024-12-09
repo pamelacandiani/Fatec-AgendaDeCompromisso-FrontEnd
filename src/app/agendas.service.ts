@@ -11,6 +11,12 @@ export class AgendasService {
   constructor(private http:HttpClient) {}
 
   getAgendas(): Observable<Agendas []>{
-    return this.http.get<Agendas []>('http://localhost:3000/Agendas')
+    return this.http.get<Agendas []>('http://localhost:8080/agendas')
   }
+
+  delete(agendas: Agendas): Observable<void>{
+    return this.http.delete<void>('http://localhost:8080/agendas/' + agendas.id)
+  }
+
+  
 }
