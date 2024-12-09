@@ -1,19 +1,29 @@
 {
-  "posts": [
+  "Agendas": [
+
     {
       "id": 1,
-      "title": "json-server",
-      "author": "typicode"
-    }
-  ],
-  "comments": [
+      "compromisso": "Reuniao 1",
+      "date": "hoje",
+      "time": "10 e meia",
+      "local": "Sala 1"
+    },
+
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "id": 2,
+      "compromisso": "Reuniao 2",
+      "date": "hoje",
+      "time": "10 e meia",
+      "local": "Sala 1"
+    },
+
+    {
+      "id": 3,
+      "compromisso": "Reuniao 3",
+      "date": "hoje",
+      "time": "10 e meia",
+      "local": "Sala 1"
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  ]
 }
