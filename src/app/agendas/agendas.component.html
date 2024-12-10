@@ -12,7 +12,7 @@
     <tbody>
       <tr *ngFor="let agendas of agendas">
           <th>{{agendas.id}}</th>
-          <th>{{agendas.compromisso}}</th>
+          <td><a [routerLink]="['/agendas', agendas.id]">{{agendas.compromisso}}</a></td>
           <td>{{agendas.date}}</td>
           <td>{{agendas.time}}</td>
           <td>{{agendas.local}}</td>

@@ -9,7 +9,8 @@ const routes: Routes = [
   {path: '', redirectTo: '/home', pathMatch: 'full'},
   {path: 'home', component: HomeComponent},
   {path: 'agendas', component: AgendasComponent},
-  {path: 'agendas-forms', component: AgendasFormsComponent}
+  {path: 'agendas-forms', component: AgendasFormsComponent},
+  {path: 'agendas/:id', component: AgendasFormsComponent}
 ];
 
 @NgModule({

@@ -17,6 +17,8 @@
       <label for="local" class="form-label">Local</label>
       <input formControlName="local" type="text " class="form-control" id="local" placeholder="Digite o local">
     </div>
-    <button type="button" class="btn btn-primary" (click)="save()">Agendar</button>
+    <button *ngIf="!isEditing" type="button" class="btn btn-primary" (click)="save()">Agendar</button>
+
+    <button *ngIf="isEditing" type="button" class="btn btn-primary" (click)="update()">Alterar</button>
   </form>
 </div>
